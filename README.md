@@ -68,3 +68,4 @@ npm run build
 - [Luxon](https://moment.github.io/luxon/)
 - [NPM Run All](https://www.npmjs.com/package/npm-run-all)
 - [HTML Minifier](https://www.npmjs.com/package/html-minifier)
+- [standard-version](https://github.com/conventional-changelog/standard-version)

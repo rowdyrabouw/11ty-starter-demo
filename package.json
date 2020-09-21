@@ -1,0 +1,36 @@
+{
+	"name": "11ty-starter",
+	"version": "0.0.1",
+	"description": "Boilerplate for projects built with Eleventy, Tailwind CSS, PurgeCSS and PostCSS",
+	"scripts": {
+		"clean": "del dist",
+		"dev:postcss": "postcss src/css/*.css -o src/static/css/style.css --watch --verbose",
+		"dev:scripts": "webpack --watch --config webpack.config.js",
+		"dev:11ty": "eleventy --serve --watch",
+		"build:postcss": "NODE_ENV=production postcss src/css/style.css -o dist/static/css/style.css",
+		"build:11ty": "ELEVENTY_ENV=production eleventy",
+		"build:scripts": "webpack -p --config webpack.config.js",
+		"start": "run-p dev:* --print-label",
+		"build": "run-s clean build:* --print-label",
+		"release": "standard-version"
+	},
+	"author": "Rowdy Rabouw",
+	"license": "MIT",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.11.0",
+		"@babel/core": "^7.11.6",
+		"@babel/preset-env": "^7.11.5",
+		"autoprefixer": "^9.8.6",
+		"babel-loader": "^8.1.0",
+		"cssnano": "^4.1.10",
+		"del-cli": "^3.0.1",
+		"html-minifier": "^4.0.0",
+		"luxon": "^1.25.0",
+		"npm-run-all": "^4.1.5",
+		"postcss-cli": "^7.1.2",
+		"standard-version": "^9.0.0",
+		"tailwindcss": "^1.8.5",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12"
+	}
+}

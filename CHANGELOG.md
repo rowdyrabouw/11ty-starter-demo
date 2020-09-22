@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/rowdyrabouw/11ty-starter/compare/v0.0.10...v0.0.11) (2020-09-22)
+
+
+### Bug Fixes
+
+* update file paths to new structure ([a8af9b3](https://github.com/rowdyrabouw/11ty-starter/commit/a8af9b3317f6fda583ee68412f17e55f21633ba6))
+
+
+### Docs
+
+* update README ([c76169c](https://github.com/rowdyrabouw/11ty-starter/commit/c76169c831d512c2778a0792508d5e0924a84972))
+
 ### [0.0.10](https://github.com/rowdyrabouw/11ty-starter/compare/v0.0.9...v0.0.10) (2020-09-22)
 
 

@@ -23,6 +23,4 @@ dist
 .cache
 
 # Temp build files
-src/static/css/*.css
-src/static/js/*.js
-src/static/js/*.js.map
+src/.temp

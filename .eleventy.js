@@ -5,7 +5,9 @@ const ErrorOverlay = require('eleventy-plugin-error-overlay');
 
 module.exports = function (eleventyConfig) {
 	// folders to copy to build dir
-	eleventyConfig.addPassthroughCopy('src/static');
+	eleventyConfig.addPassthroughCopy({ 'src/.temp/css': 'css' });
+	eleventyConfig.addPassthroughCopy({ 'src/.temp/img': 'img' });
+	eleventyConfig.addPassthroughCopy({ 'src/.temp/js': 'js' });
 
 	// shows 11ty error name, message and stacktrace in the browser
 	eleventyConfig.addPlugin(ErrorOverlay);

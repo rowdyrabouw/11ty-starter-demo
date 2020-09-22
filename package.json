@@ -12,7 +12,7 @@
 		"build:scripts": "webpack -p --config webpack.config.js",
 		"start": "run-p dev:* --print-label",
 		"build": "run-s clean build:* --print-label",
-		"release": "standard-version"
+		"release": "standard-version && git push --follow-tags"
 	},
 	"author": "Rowdy Rabouw",
 	"license": "MIT",

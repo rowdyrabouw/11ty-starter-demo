@@ -1,6 +1,6 @@
 {
 	"name": "11ty-starter",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Boilerplate for projects built with Eleventy, Tailwind CSS, PurgeCSS and PostCSS",
 	"scripts": {
 		"clean": "del dist && del .parcel-cache",

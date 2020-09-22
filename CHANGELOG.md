@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/rowdyrabouw/11ty-starter/compare/v0.0.9...v0.0.10) (2020-09-22)
+
+
+### Feature Improvements
+
+* get rid of static folder ([3c66133](https://github.com/rowdyrabouw/11ty-starter/commit/3c66133b0f3565a74c0b9b8bfbdb4c625db3fc44))
+
 ### [0.0.9](https://github.com/rowdyrabouw/11ty-starter/compare/v0.0.8...v0.0.9) (2020-09-22)
 
 

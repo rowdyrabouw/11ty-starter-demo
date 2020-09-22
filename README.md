@@ -29,9 +29,11 @@ Based on Chris Collins' [jamstack-web-starter
 - PurgeCSS to remove unused CSS (set up for TailwindCSS by default) in production
 - HTML minified in production
 - CSS minified in production
+- Images minified
 - Parcel used to compile scripts
 - Scripts optimised for production
 - Document `<head>` crafted using [htmlhead.dev](https://htmlhead.dev)
+- Automatic Semantic Versioning with Standard Version
 
 ## Getting Started
 
@@ -51,7 +53,7 @@ npm start
 
 ### Creating a production build
 
-Minify HTML, compress JS and minify CSS.
+Minify HTML, CSS, images and compress JS
 
 ```
 npm run build
@@ -62,6 +64,10 @@ npm run build
 Update version in package.json and generates CHANGELOG.md
 
 _Works best when using [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)._
+
+- All commit types (see .versionrc), except `feat`, will result in a **PATCH** in semantic versioning
+- Commit type `feat` will result in a **MINOR** in semantic versioning
+- Appending a `!` after the type, will result in a **MAJOR** in semantic versioning
 
 ```
 npm run release
@@ -78,4 +84,5 @@ npm run release
 - [Luxon](https://moment.github.io/luxon/)
 - [NPM Run All](https://www.npmjs.com/package/npm-run-all)
 - [HTML Minifier](https://www.npmjs.com/package/html-minifier)
-- [standard-version](https://github.com/conventional-changelog/standard-version)
+- [Standard Version](https://github.com/conventional-changelog/standard-version)
+- [imagemin](https://github.com/imagemin/imagemin-cli)

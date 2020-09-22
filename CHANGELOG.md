@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/rowdyrabouw/11ty-starter/compare/v0.0.8...v0.0.9) (2020-09-22)
+
+
+### Feature Improvements
+
+* adopted personal preferences from other projects ([67bb3c1](https://github.com/rowdyrabouw/11ty-starter/commit/67bb3c1a7f9a9876db5e0d15cc438df0a039268a))
+
 ### [0.0.8](https://github.com/rowdyrabouw/11ty-starter/compare/v0.0.7...v0.0.8) (2020-09-22)
 
 

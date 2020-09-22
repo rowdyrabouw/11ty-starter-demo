@@ -4,15 +4,16 @@
 	"description": "Boilerplate for projects built with Eleventy, Tailwind CSS, PurgeCSS and PostCSS",
 	"scripts": {
 		"clean": "del dist && del .parcel-cache",
+		"clean:dev": "run-s clean && del src/static/css && del src/static/js",
 		"dev:postcss": "postcss src/css/*.css -o src/static/css/style.css --watch --verbose",
 		"dev:parcel": "parcel watch src/js/*.js --dist-dir src/static/js/",
 		"dev:11ty": "eleventy --serve --watch",
 		"build:postcss": "NODE_ENV=production postcss src/css/style.css -o dist/static/css/style.css",
 		"build:11ty": "ELEVENTY_ENV=production eleventy",
 		"build:parcel": "parcel build src/js/script.js --dist-dir dist/static/js/ --no-source-maps",
-		"start": "run-p dev:* --print-label",
+		"start": "run-s clean:dev && run-p dev:* --print-label",
 		"build": "run-s clean build:* --print-label",
-		"release": "npm run build && standard-version && git push --follow-tags"
+		"release": "run-s build && standard-version && git push --follow-tags"
 	},
 	"author": "Rowdy Rabouw",
 	"license": "MIT",

@@ -13,7 +13,7 @@
 		"build:parcel": "parcel build src/js/script.js --dist-dir dist/static/js/ --no-source-maps",
 		"start": "run-s clean:dev && run-p dev:* --print-label",
 		"build": "run-s clean build:* --print-label",
-		"release": "run-s build && standard-version && git push --follow-tags"
+		"release": "standard-version && git push --follow-tags"
 	},
 	"author": "Rowdy Rabouw",
 	"license": "MIT",

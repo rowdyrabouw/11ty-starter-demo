@@ -16,8 +16,6 @@ Based on Chris Collins' [jamstack-web-starter
 - [Deployment](#deployment)
 - [Credits](#credits)
 
----
-
 ## Project Overview
 
 - The project uses [Eleventy](https://11ty.io) as a static site generator
@@ -73,7 +71,15 @@ _Works best when using [Conventional Commits](https://www.conventionalcommits.or
 npm run release
 ```
 
-#### Credits
+## Deployment
+
+You can host the production output on any web server or service you like and upload it via any method, it'll work.
+
+If you don't have an existing place to host your site you should have a look at [Netlify](https://www.netlify.com), I can't recommend it enough. To get started you can hit the button below.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rowdyrabouw/11ty-starter)
+
+## Credits
 
 - [Eleventy](https://11ty.io)
 - [TailwindCSS](https://tailwindcss.com/)
